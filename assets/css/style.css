@@ -1,0 +1,536 @@
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* NEWS BLOCK*/
+
+.hero-news-slider {
+  width: calc(100vw - 100px);
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.news-block {
+  width: 32%;
+  height: 220px;
+}
+
+.news-description, .news-title {
+  margin: 0;
+  padding: 0
+}
+
+.news-description {
+  font-size: 12px
+}
+
+.news-block > .side-section, .event-hero-section > .side-section {
+  width: 100%;
+  height: 100px;
+  margin-top: calc(220px - 100px);
+  padding: 5px 0 10px 20px;
+}
+
+.side-section {
+  background-color: rgba(3, 68, 165, 0.7);
+  color: #fff;
+  width: 35%;
+  height: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.news-bottom-block {
+  width: 110px
+}
+
+.news-bottom-block > span, a {
+  display: block;
+  color: inherit;
+}
+
+.news-date {
+  font-size: 10px;
+}
+
+.button-see-more {
+  border: 2px solid rgb(0, 223, 252);
+  padding: 3px 0 3px 10px;
+  font-size: 12px;
+  box-sizing: border-box;
+  width: 100px
+}
+
+.control-section {
+  width: 65%;
+  height: 100%
+}
+
+/* ABOUT BLOCK */
+
+.about-block {
+  display: flex;
+  flex-direction: row;
+  width: calc(100vw - 100px);
+  margin: 0 auto;
+  height: 350px
+}
+
+.about-section {
+  width: 50%; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section {
+  width: 50%; 
+}
+
+.about-data {
+  padding: 10px;
+  height: 70%
+}
+
+.about-description {
+  font-size: 12px;
+  margin: 10px 0 0 0;
+}
+
+.about-bottom-block {
+  height: 30%;
+  background: linear-gradient(to left, rgb(16, 202, 223), rgb(6, 124, 188));
+}
+
+/* EVENT CALENDAR BLOCK */
+
+.event-calendar-block {
+  width: calc(100vw - 100px);
+  height: 220px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.event-hero-section {
+  width: 50%;
+}
+
+.events-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px 30px;
+  box-sizing: border-box;
+}
+
+.calendar-month {
+  display: block;
+  font-size: 10px;
+}
+
+.calendar-event {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.event-date-day {
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(15, 150, 205);
+  line-height: 25px;
+}
+
+.event-date-month {
+  color: rgb(15, 150, 205);
+  line-height: 14px;
+  font-weight: 600;
+}
+
+.event-data > span, .event-date > span {
+  display: block;
+}
+
+.event-data {
+  margin-left: 20px;
+}
+
+.event-description, .event-hashtag {
+  font-size: 8px;
+}
+
+.event-hashtag {
+  font-weight: 600;
+  color: rgb(15, 150, 205);
+}
+
+.calendar-section {
+  background: linear-gradient(to left, rgb(16, 202, 223), rgb(6, 124, 188));
+  width: 10%;
+}
+
+/* PERSON CSS */
+
+.person {
+  width: 25%;
+}
+
+.person-image {
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.person-description {
+  font-size: 8px;
+}
+
+/* PEOPLE BLOCK */
+
+.people-block {
+  width: calc(100vw - 100px);
+  margin: 0 auto;
+}
+
+.people-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* TOOLBAR */
+
+.toolbar {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgb(16, 202, 223), rgb(6, 124, 188));
+  color: white;
+}
+
+.toolbar-left, .toolbar-right {
+  height: 80px;
+  margin: 0 20px;
+}
+
+.toolbar-right {
+  display: flex;
+  flex-direction: row;  
+}
+
+.toolbar-right > div {
+  height: 20px;
+  width: 20px;
+  margin: 30px 10px;
+}
+
+.toolbar-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 325px;
+  justify-content: space-between;
+}
+
+.toolbar-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar-title {
+  display: block;
+  width: 200px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.toolbar-title-extra {
+  font-size: 12px;
+}
+
+.toolbar-logo {
+  height: 70px;
+  width: 100px;
+  background-image: url(/logo.png);
+  background-size: contain;
+}
+
+/* NAV */
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    transition: max-height 0.5s ease;
+  }
+  .navbar-container > a {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid rgb(6, 124, 188);
+  margin-bottom: 10px;
+}
+
+.navbar-container > a {
+  display: block;
+}
+
+.navbar-container {
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer {
+  color: white;
+  font-size: 12px;
+}
+
+.footer-top {
+  height: 230px;
+  padding-top: 20px;
+  margin-top: 30px;
+  background: linear-gradient(to top, rgb(16, 202, 223), rgb(6, 124, 188));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+.footer-bottom {
+  height: 100px;
+  background: rgb(16, 202, 223);
+}
+
+.footer-contacts {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-contacts > span {
+  font-weight: 600
+}
+
+.footer-links {
+  width: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-links-section {
+  width: 30%;
+}
+
+.footer-link {
+  display: block;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.footer-links-title {
+  font-weight: 600;
+}
+
+.footer-extra {
+  width: 160px;
+}
+
+.footer-extra > span {
+  display: block;
+}
+
+.footer-bottom > div {
+  margin: 0 auto;
+}
+
+/* SIDEBAR */
+
+aside {
+  width: 350px;
+  margin: 30px;
+  border-left: 2px solid rgb(15, 150, 205);
+  padding: 0 0 0 45px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  aside.sticky{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    overflow: hidden;
+  }
+}
+
+aside > nav {
+  margin-bottom: 100px;
+}
+
+aside > h2 {
+  width: 600px;
+  margin: 0 0 15px 0
+}
+
+.sidebar-link {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-link > span {
+  display: block;
+}
+
+.sidebar-link-icon {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  position: relative;
+  bottom: 5px;
+}
+
+/* BACKGROUND SHOW */
+
+.background-show {
+  height: 450px;
+}
+
+.background-show > div {
+  height: 150px;
+  background-color: rgba(3, 68, 165, 0.7);
+}
+
+/* SECTION PAGE */
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; 
+  align-items: flex-start;
+}
+
+.section-container > main {
+  width: 100%;
+  margin: 30px;
+  min-height: 500px;
+}
+
+/* DOCUMENT BLOCK */
+.document-block {
+  display: flex;
+  width: calc(100%-30px);
+  flex-direction: row;
+  min-height: 50px;
+  border: 1px solid rgb(3, 68, 165);
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.document-block-image {
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.document-block-title {
+  display: block;
+  margin-left: 5px;
+}
+
+/* GLOBAL CSS */
+
+h1 {
+  font-size: 20px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 14px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 14px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+#category {
+  font-weight: 500;
+}
+
+#title {
+  letter-spacing: 0.4px;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.13636;
+}
+
+#banner {
+  margin: 20px;
+  height: 800px;
+}
+
+#editor {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.uk-navbar-container {
+  background: #fff !important;
+  font-family: Staatliches;
+}
+
+img:hover {
+  opacity: 1;
+  transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
